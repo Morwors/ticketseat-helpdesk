@@ -52,8 +52,8 @@ export default function ThemeSettings() {
             <SelectContent>
               <SelectGroup>
                 <SelectLabel>Themes</SelectLabel>
-                <SelectItem value="light">Peppermint Light</SelectItem>
-                <SelectItem value="dark">Peppermint Dark</SelectItem>
+                <SelectItem value="light">TicketSeat Support Light</SelectItem>
+                <SelectItem value="dark">TicketSeat Support Dark</SelectItem>
                 <SelectItem value="solarized-light">Solarized Light</SelectItem>
                 {/* <SelectItem value="solarized-dark">Solarized Dark</SelectItem> */}
                 <SelectItem value="forest">Forest</SelectItem>

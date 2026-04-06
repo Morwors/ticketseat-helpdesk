@@ -38,7 +38,7 @@ export default function Login({}) {
               variant: "destructive",
               title: "Error",
               description:
-                "There was an error logging in, please try again. If this issue persists, please contact support via the discord.",
+                "There was an error logging in, please try again. If this issue persists, please contact support.",
             });
           }
         });
@@ -48,7 +48,7 @@ export default function Login({}) {
         variant: "destructive",
         title: "Database Error",
         description:
-          "This is an issue with the database, please check the docker logs or contact support via discord.",
+          "This is an issue with the database, please check the docker logs or contact support.",
       });
     }
   }
@@ -85,7 +85,7 @@ export default function Login({}) {
     <div className="min-h-screen bg-background flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-foreground">
-          Welcome to Peppermint
+          TicketSeat Support
         </h2>
       </div>
 
@@ -110,7 +110,7 @@ export default function Login({}) {
                     autoComplete="email"
                     required
                     onChange={(e) => setEmail(e.target.value)}
-                    className="appearance-none block w-full px-3 py-2 border text-gray-900 border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border text-gray-900 border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-500 focus:border-green-500 sm:text-sm"
                     onKeyPress={(event) => {
                       if (event.key === "Enter") {
                         postData();
@@ -135,7 +135,7 @@ export default function Login({}) {
                     autoComplete="password"
                     required
                     onChange={(e) => setPassword(e.target.value)}
-                    className="appearance-none block w-full px-3 py-2 border text-gray-900 border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border text-gray-900 border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-500 focus:border-green-500 sm:text-sm"
                     onKeyPress={(event) => {
                       if (event.key === "Enter") {
                         postData();
@@ -160,7 +160,7 @@ export default function Login({}) {
                 <button
                   type="submit"
                   onClick={postData}
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                 >
                   Sign In
                 </button>
@@ -169,7 +169,7 @@ export default function Login({}) {
                   <button
                     type="submit"
                     onClick={() => router.push(url)}
-                    className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                    className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                   >
                     Sign in with OIDC
                   </button>
@@ -181,10 +181,10 @@ export default function Login({}) {
 
         <div className="mt-8 text-center flex flex-col space-y-2">
           <span className="font-bold text-foreground">
-            Built with 💚 by Peppermint Labs
+            TicketSeat
           </span>
           <a
-            href="https://docs.peppermint.sh/"
+            href="https://ticketseat.io"
             target="_blank"
             className="text-foreground"
           >

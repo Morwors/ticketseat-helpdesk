@@ -47,7 +47,7 @@ export default function ShadLayout({ children }: any) {
                 <SidebarTrigger title="[" />
                 <div className="sm:flex hidden w-full justify-start items-center space-x-6">
                   {user.isAdmin && (
-                    <Link href="https://github.com/Peppermint-Lab/peppermint/releases">
+                    <Link href="https://ticketseat.io">
                       <span className="inline-flex items-center rounded-md bg-green-700/10 px-3 py-2 text-xs font-medium text-green-600 ring-1 ring-inset ring-green-500/20">
                         Version {process.env.NEXT_PUBLIC_CLIENT_VERSION}
                       </span>
@@ -80,7 +80,7 @@ export default function ShadLayout({ children }: any) {
 
                   {user.isAdmin && (
                     <Link
-                      href="https://github.com/Peppermint-Lab/peppermint/discussions"
+                      href="https://ticketseat.io"
                       target="_blank"
                       className="hover:cursor-pointer"
                     >

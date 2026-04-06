@@ -83,7 +83,7 @@ export function ticketRoutes(fastify: FastifyInstance) {
         },
       });
 
-      if (!email && !validateEmail(email)) {
+      if (email && validateEmail(email)) {
         await sendTicketCreate(ticket);
       }
 
@@ -187,7 +187,7 @@ export function ticketRoutes(fastify: FastifyInstance) {
         },
       });
 
-      if (!email && !validateEmail(email)) {
+      if (email && validateEmail(email)) {
         await sendTicketCreate(ticket);
       }
 
